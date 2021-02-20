@@ -4,6 +4,8 @@ A simple dashboard for showing your [YNAB](https://youneedabudget.com) budget.
 
 ![A screenshot of the dashboard with two items shown: rent and electricity](images/screenshot.png)
 
+[![Deploy to heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bitboxer/ynab-dashboard)
+
 # Starting
 
 ```bash

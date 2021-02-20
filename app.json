@@ -1,0 +1,11 @@
+{
+  "name": "YNAB Dashboard",
+  "description": "A dashboard to show budgets from YNAB",
+  "repository": "https://github.com/bitboxer/ynab-dashboard",
+  "keywords": ["node", "express", "ynab"],
+  "env": {
+    "YNAB_ACCESS_TOKEN": {
+      "description": "You can get this token in the YNAB developer console"
+    }
+  }
+}
