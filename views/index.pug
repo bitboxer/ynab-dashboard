@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    link(href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/darkly/bootstrap.min.css", rel="stylesheet", integrity="sha384-w+8Gqjk9Cuo6XH9HKHG5t5I1VR4YBNdPt/29vwgfZR485eoEJZ8rJRbm3TR32P6k", crossorigin="anonymous")
+    title Budget
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+  body(class='mt-5')
+    div(class='container', style={'margin-bottom': '2rem'})
+      h1(class='font-weight-normal') Budget
+
+    each category in categories
+      div(class='container card', style={'padding-top': '1rem', 'margin-bottom': '1rem'})
+        h2(class='font-weight-normal', style={'margin-bottom': '1rem'}) #[span(class='font-weight-bold') #{category.name}]
+
+        div(class='progress', style={height: '4rem'})
+          div(class='progress-bar bg-info progress-bar-striped progress-bar-animated', role='progressbar', style={width: 100 - category.budget_percentage + '%'})
+
+        p(style={'margin-top': '1rem', 'font-size': '1.3em'}) #[span(class='font-weight-bold') #{(category.balance / 1000).toFixed(2)}]#{currency} left of #{((category.activity * -1 + category.balance) / 1000).toFixed(2)}#{currency}
+
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
