@@ -2,6 +2,8 @@
 
 A simple dashboard for showing your [YNAB](https://youneedabudget.com) budget.
 
+![A screenshot of the dashboard with two items shown: rent and electricity](images/screenshot.png)
+
 # Starting
 
 ```bash
