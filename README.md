@@ -25,3 +25,5 @@ YNAB web site: `https://app.youneedabudget.com/BUDGETID/...`.
 Additionally you can filter and only show selected budgets like this:
 
 `http://localhost:4000/BUDGETID?category=Food&category=Cats`
+
+This code is inspired by [ynab-dashboard](https://github.com/computerwizjared/ynab-dashboard) by [Jared Bates](https://github.com/computerwizjared).
